@@ -43,7 +43,15 @@ ___TEMPLATE_PARAMETERS___
     "displayName": "Order",
     "simpleValueType": true,
     "canBeEmptyString": true,
-    "help": "Enter order id or number if it\u0027s purchase pixel"
+    "help": "Enter order id or number"
+  },
+  {
+    "type": "TEXT",
+    "name": "value",
+    "displayName": "Value",
+    "simpleValueType": true,
+    "help": "Enter order value",
+    "canBeEmptyString": false
   }
 ]
 
@@ -51,9 +59,22 @@ ___TEMPLATE_PARAMETERS___
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const sendPixel = require('sendPixel');
+const getCookieValues = require('getCookieValues');
 const getTimestampMillis = require('getTimestampMillis');
 
-sendPixel('https://tracking-api.neubids.com/pxl?id=' + data.pixelId + '&o=' + data.order + '&ts=' + getTimestampMillis(),
+const neuBidsCookieId = '_neuaid';
+
+var aid = getCookieValues(neuBidsCookieId)[0];
+if (aid === undefined) {
+  aid = "";
+}
+
+sendPixel("https://tracking-api.neubids.com/pxl" +
+          "?id=" + data.pixelId + 
+          "&o=" + data.order + 
+          "&v=" + data.value +
+          "&aid=" + aid + 
+          "&ts=" + getTimestampMillis(),
   data.gtmOnSuccess,
   data.gtmOnFailure
 );
@@ -94,6 +115,27 @@ ___WEB_PERMISSIONS___
       "isEditedByUser": true
     },
     "isRequired": true
+  },
+  {
+    "instance": {
+      "key": {
+        "publicId": "get_cookies",
+        "versionId": "1"
+      },
+      "param": [
+        {
+          "key": "cookieAccess",
+          "value": {
+            "type": 1,
+            "string": "any"
+          }
+        }
+      ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
+    },
+    "isRequired": true
   }
 ]
 
@@ -106,7 +148,7 @@ scenarios:
     const log = require('logToConsole');
 
     const mockData = {
-      pixelId: '101-909',
+      pixelId: '32-75',
       order: '123456',
       gtmOnSuccess: function() {
         log('gtmOnSuccess called');
@@ -121,6 +163,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 7/13/2025, 2:28:43 PM
+Created on 9/27/2025, 8:40:58 PM
 
 
