@@ -51,7 +51,7 @@ ___TEMPLATE_PARAMETERS___
     "displayName": "Value",
     "simpleValueType": true,
     "help": "Enter order value",
-    "canBeEmptyString": false
+    "canBeEmptyString": true
   }
 ]
 
@@ -61,23 +61,33 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 const sendPixel = require('sendPixel');
 const getCookieValues = require('getCookieValues');
 const getTimestampMillis = require('getTimestampMillis');
+const encodeUriComponent = require('encodeUriComponent');
+//  const log = require('logToConsole');
 
-const neuBidsCookieId = '_neuaid';
+const NEU_AID_COOKIE = '_neuaid';
 
-var aid = getCookieValues(neuBidsCookieId)[0];
-if (aid === undefined) {
-  aid = "";
+const cookieVals = getCookieValues(NEU_AID_COOKIE);
+const aid = (cookieVals && cookieVals.length) ? cookieVals[0] : '';
+
+const pid   = data.pixelId || '';
+const order = data.order   || '';
+const value = data.value   || '';
+
+if (!pid) {
+  data.gtmOnFailure();
+  return;
 }
 
-sendPixel("https://tracking-api.neubids.com/pxl" +
-          "?id=" + data.pixelId + 
-          "&o=" + data.order + 
-          "&v=" + data.value +
-          "&aid=" + aid + 
-          "&ts=" + getTimestampMillis(),
-  data.gtmOnSuccess,
-  data.gtmOnFailure
-);
+//  log(data);
+
+var url = "https://tracking-api.neubids.com/pxl" +
+    "?pid=" + pid + 
+    "&o=" + encodeUriComponent(order) +
+    "&v=" + encodeUriComponent(value) +
+    "&aid=" + aid + 
+    "&ts=" + getTimestampMillis();
+
+sendPixel(url, data.gtmOnSuccess, data.gtmOnFailure);
 
 
 ___WEB_PERMISSIONS___
@@ -150,6 +160,7 @@ scenarios:
     const mockData = {
       pixelId: '32-75',
       order: '123456',
+      value: '987654',
       gtmOnSuccess: function() {
         log('gtmOnSuccess called');
       },
@@ -163,6 +174,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 9/27/2025, 8:40:58 PM
+Created on 9/27/2025, 9:07:41 PM
 
 
