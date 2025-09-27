@@ -62,7 +62,6 @@ const sendPixel = require('sendPixel');
 const getCookieValues = require('getCookieValues');
 const getTimestampMillis = require('getTimestampMillis');
 const encodeUriComponent = require('encodeUriComponent');
-//  const log = require('logToConsole');
 
 const NEU_AID_COOKIE = '_neuaid';
 
@@ -77,8 +76,6 @@ if (!pid) {
   data.gtmOnFailure();
   return;
 }
-
-//  log(data);
 
 var url = "https://tracking-api.neubids.com/pxl" +
     "?pid=" + pid + 
@@ -174,6 +171,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 9/27/2025, 9:07:41 PM
+Created on 9/27/2025, 9:28:23 PM
 
 
