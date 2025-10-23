@@ -7,7 +7,7 @@ ___INFO___
   "description": "Send NeuBids pixel events (order/value etc.). For more information, visit https://neubids.com/docs/pixel",
   "categories": ["ADVERTISING", "CONVERSIONS"],
   "securityGroups": [],
-  "id": "neubids_pixel",
+  "id": "cvt_temp_public_id",
   "type": "TAG",
   "version": 1,
   "brand": {
@@ -51,60 +51,36 @@ ___TEMPLATE_PARAMETERS___
 ]
 
 ___WEB_PERMISSIONS___
-
 [
   {
     "instance": {
-      "key": {
-        "publicId": "send_pixel",
-        "versionId": "1"
-      },
+      "key": { "publicId": "send_pixel", "versionId": "1" },
+      "param": [
+        { "key": "allowedUrls", "value": { "type": 1, "string": "specific" } },
+        { "key": "urls", "value": { "type": 2, "listItem": [
+          { "type": 1, "string": "https://tracking-api.neubids.com/*" }
+        ] } }
+      ]
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": { "publicId": "get_cookies", "versionId": "1" },
       "param": [
         {
-          "key": "allowedUrls",
-          "value": {
-            "type": 1,
-            "string": "specific"
-          }
-        },
-        {
-          "key": "urls",
+          "key": "names",
           "value": {
             "type": 2,
             "listItem": [
-              {
-                "type": 1,
-                "string": "https://tracking-api.neubids.com/*"
-              }
+              { "type": 1, "string": "_neuaid" }
             ]
           }
         }
       ]
     },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "get_cookies",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "cookieAccess",
-          "value": {
-            "type": 1,
-            "string": "any"
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
+    "clientAnnotations": { "isEditedByUser": true },
     "isRequired": true
   }
 ]
