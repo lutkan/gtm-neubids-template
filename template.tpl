@@ -1,3 +1,5 @@
+___TERMS_OF_SERVICE___ By using this template, you agree to the Google Tag Manager Community Template Gallery Terms of Service: https://developers.google.com/tag-platform/tag-manager/templates/gallery-tos
+
 ___INFO___
 
 {
@@ -158,13 +160,6 @@ scenarios:
     };
 
     runCode(mockData);
-
-
-___TERMS_OF_SERVICE___
-
-By using this template, you agree to the Google Tag Manager Community Template Gallery Terms of Service:
-https://developers.google.com/tag-platform/tag-manager/templates/gallery-tos
-
 
 ___NOTES___
 
