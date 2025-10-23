@@ -174,6 +174,12 @@ scenarios:
     runCode(mockData);
 
 
+___TERMS_OF_SERVICE___
+
+By using this template, you agree to the Google Tag Manager Community Template Gallery Terms of Service:
+https://developers.google.com/tag-platform/tag-manager/templates/gallery-tos
+
+
 ___NOTES___
 
 Created on 9/2/2019, 1:02:37 PM
