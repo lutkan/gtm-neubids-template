@@ -1,5 +1,5 @@
-homepage: "https://github.com/lutkan/gtm-neubids-template"
-documentation: "https://github.com/lutkan/gtm-neubids-template"
+homepage: "https://neubids.com"
+documentation: "https://neubids.com/docs/pixel"
 versions:
-  - sha: 0fdda6480e02ad42fbdfa86bdedd136e896c3305
+  - sha: 1d25e1ca63e6bcfe6112212530733348cb202eee
     changeNotes: Initial release.
