@@ -1,5 +1,5 @@
 homepage: "https://neubids.com"
 documentation: "https://neubids.com/docs/pixel"
 versions:
-  - sha: d7d65cbed0f9ace626e27cd1b9693c055ed9eea7
+  - sha: 9184d8b77f2827a82f6878d21a1910930fa6c9b3
     changeNotes: Initial release.
