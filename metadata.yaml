@@ -1,0 +1,5 @@
+homepage: "https://github.com/lutkan/gtm-neubids-template"
+documentation: "https://github.com/lutkan/gtm-neubids-template"
+versions:
+  - sha: 0fdda6480e02ad42fbdfa86bdedd136e896c3305
+    changeNotes: Initial release.
