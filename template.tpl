@@ -1,22 +1,34 @@
-___TERMS_OF_SERVICE___ By creating or modifying this file you agree to Google Tag Manager's Community Template Gallery Developer Terms of Service available at https://developers.google.com/tag-manager/gallery-tos (or such other URL as Google may provide), as modified from time to time.
+___TERMS_OF_SERVICE___
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
+
+
 ___INFO___
+
 {
-  "displayName": "NeuBidsPixel",
-  "description": "Send NeuBids pixel events (order/value etc.). For more information, visit https://neubids.com/docs/pixel",
-  "categories": ["ADVERTISING", "CONVERSIONS"],
-  "id": "cvt_temp_public_id",
   "type": "TAG",
+  "id": "cvt_temp_public_id",
   "version": 1,
+  "securityGroups": [],
+  "displayName": "NeuBidsPixel",
+  "categories": ["ADVERTISING", "CONVERSIONS"],
   "brand": {
-    "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUDSURBVFhHrZdtbJZXHcZ/17mfjpex0vUFHPLgshRfYkxccX7QGPYJCpROXcg+mWyMjA8GtSsQdZpKnLqYdr5kmmyJEl9mFKeA7VjtRxL1w+JGnJkZY0JbcJS+jFEslD73ufzw8NSnd/uUtvr7ds51nfP/n3Pf9zn/WyyCXQ3PrLquiXvk5AOObDCsFjbSOzHSnxDfiMuqz/W8vXciO7YSynZk6aAjvFpXszESWyW2Gj4kU4u8DCQAQ8SeRBqR/ZrhRJJLXjw+9KV+kLNzljNvAg/c2ZmPQXuRPwfkSwFvhSHKnAH/ZKqq6nDvxS8OZz0l5pywg47wSkP1FsyT4KaFBs5iiIKTTsNXe95p+0tWZ64EdnEkuV4/+LDNtyXWZPWlYPsc0NYz2n48+0hCeQOs6/WDDxu6/l/BASTdDfy4ta5rZ1ZLyhsttau3gJ+RVFfe/z9QAF61mZSUN9y38fYtf35zou/tkmF6B5prn1qvEL8pae308CVinGKfsrWP6K9IVFHciUZZhx5Y/b2aknc6gSpV7QF9vNReCoYI/F1of05he89o27OWdgDrSx6JrWkuPjTdBtjZ0NVI9B+R7ikJi8MGvYF9eMqFX/WOffk8QGt9570R9QjWZQa8nEtiy9GhA5cCgOwdSwtu2z5j+HpaiM3do/u/WwreQUeIsHuO4Bh/tJAm9wOo5a5nV+rG1RcQ27LGyti2zgn/Ignx58eGD/wz+3m11D/dhGOPpLvK+6exDzeNju8JYfLK3cgfzuqV8YDhqVRu7h5t/8ax4YNvZYPv4kgivLti8CJNLzfcviZYyUZMfVadjS8Ydyl626aR8a+9NLL/dDZwicm68/diHsz2Z1gXovIBO29peVadxlzE/iEhbt80Mn7wD2MHXj/EoZi1ldjFkSTKuxHvyWrlGFaJZF1woEazTkQwnjL8PgQ/eGV0vL370sG/zRe4xLW6/ibsz2b7ZyFy0V6tlvrOJ4SezOo3T7EzmLOGQfBZxNlEDBYULqaFZKR37Avj5Y+heI8M/Ai0d+ZUszGewn40YC4bp1kDkAM+iNgm8Zik7wDPp1ZviPFkTlO/2VH79IxPbKJ2cJOtz5T3VUJmKqB3A4QBWdezhrkQSgR3gN6L9Ek5bChpm+nIBXnPQi8xo6sQ/hUCOo0YyRpuhWAFuTi9A9W11R8DPj3TVRnh80kuHQi3rYgDNq9lDQsgF+z13Fw94lGkhqxpHv56dGj/cHjhfPs1cG/xPF8cEfIAd9xZc99iVo89Ga2XQC7eBTmfwHoz67slJt/c+INlhLgHLeQwu4l4pWrqtpOUruPuoQNnkX+22F0QrM2NpZsFrVmtEoYbiOeOje8bpbweSBV/ivWnGe5bk0exbVGrhx7F9HelxoyitKW+a7Pgl+UFxHwYpyoeRLmsNjf+Rwh66Pil9umXfkZNeHqir//9K7YOId8vtLJcmwuhMLuwrYQHHMPnu0faZ5TnswZvGr3ya8E+8IWstmTM6Sge6xl7vC8rzfovKGK11nd+yg7fsvjEXJfVAilg96UheeLEcNuprEjlBIrsXPP9tU4Ljwg9YtG4iEQKNq+Dn0sKyfPH3227nDWUmDeBItb2ms4NSaLtlpoxHwE3SFoOvvkOKTVck7loOCXrxVyg7+jI49P1fyUWkMB/2fy+juWr/r0yL0KjUN6mWsiIy4rqd1X61vKhqxd+y6Eb2bGV+A/PTQaU1IaR0AAAAABJRU5ErkJggg==",
-    "displayName": "neubids pixel"
+    "id": "brand_dummy",
+    "displayName": "neubids pixel",
+    "thumbnail": "data:image/png;base64,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"
   },
+  "description": "NeuBids Pixel Id",
   "containerContexts": [
     "WEB"
   ]
 }
 
+
 ___TEMPLATE_PARAMETERS___
+
 [
   {
     "type": "TEXT",
@@ -44,40 +56,6 @@ ___TEMPLATE_PARAMETERS___
   }
 ]
 
-___WEB_PERMISSIONS___
-[
-  {
-    "instance": {
-      "key": { "publicId": "send_pixel", "versionId": "1" },
-      "param": [
-        { "key": "allowedUrls", "value": { "type": 1, "string": "specific" } },
-        { "key": "urls", "value": { "type": 2, "listItem": [
-          { "type": 1, "string": "https://tracking-api.neubids.com/*" }
-        ] } }
-      ]
-    },
-    "clientAnnotations": { "isEditedByUser": true },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": { "publicId": "get_cookies", "versionId": "1" },
-      "param": [
-        {
-          "key": "names",
-          "value": {
-            "type": 2,
-            "listItem": [
-              { "type": 1, "string": "_neuaid" }
-            ]
-          }
-        }
-      ]
-    },
-    "clientAnnotations": { "isEditedByUser": true },
-    "isRequired": true
-  }
-]
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
@@ -109,7 +87,69 @@ var url = "https://tracking-api.neubids.com/pxl" +
 
 sendPixel(url, data.gtmOnSuccess, data.gtmOnFailure);
 
+
+___WEB_PERMISSIONS___
+
+[
+  {
+    "instance": {
+      "key": {
+        "publicId": "send_pixel",
+        "versionId": "1"
+      },
+      "param": [
+        {
+          "key": "allowedUrls",
+          "value": {
+            "type": 1,
+            "string": "specific"
+          }
+        },
+        {
+          "key": "urls",
+          "value": {
+            "type": 2,
+            "listItem": [
+              {
+                "type": 1,
+                "string": "https://tracking-api.neubids.com/*"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
+    },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": {
+        "publicId": "get_cookies",
+        "versionId": "1"
+      },
+      "param": [
+        {
+          "key": "cookieAccess",
+          "value": {
+            "type": 1,
+            "string": "any"
+          }
+        }
+      ]
+    },
+    "clientAnnotations": {
+      "isEditedByUser": true
+    },
+    "isRequired": true
+  }
+]
+
+
 ___TESTS___
+
 scenarios:
 - name: Untitled test 1
   code: |-
@@ -129,5 +169,9 @@ scenarios:
 
     runCode(mockData);
 
+
 ___NOTES___
-Created on 9/2/2019, 1:02:37 PM
+
+Created on 10/23/2025, 2:56:57 PM
+
+
