@@ -7,11 +7,10 @@ NeuBids Pixel allows you to track conversions, orders, values, and segment-based
 ## Features
 
 - Lightweight invisible pixel tracking using GTM's `sendPixel`
-- Sends tracking data to `https://tracking-api.neubids.com/pxl`
+- Sends tracking data to NeuBids tracking system
 - Supports conversion and order tracking
 - Supports optional order value tracking
 - Supports optional custom `ord` and `segment` parameters
-- Automatically reads the `_neuaid` cookie and sends it as `aid`
 - Adds a cache-busting timestamp parameter to each request
 - Designed for Google Tag Manager Web containers
 
