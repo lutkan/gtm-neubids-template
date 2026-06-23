@@ -13,17 +13,17 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "NeuBids Pixel",
+  "displayName": "NeuBidsPixel",
+  "brand": {
+    "id": "neubids",
+    "displayName": "NeuBids",
+    "thumbnail": "data:image/png;base64,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"
+  },
+  "description": "NeuBids Pixel allows you to track conversions on your website",
   "categories": [
     "ATTRIBUTION",
     "REMARKETING"
   ],
-  "brand": {
-    "id": "brand_dummy",
-    "displayName": "",
-    "thumbnail": "data:image/png;base64,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"
-  },
-  "description": "NeuBids Pixel allows you to track conversions on your web site",
   "containerContexts": [
     "WEB"
   ]
@@ -80,9 +80,6 @@ const sendPixel = require('sendPixel');
 const getCookieValues = require('getCookieValues');
 const getTimestampMillis = require('getTimestampMillis');
 const encodeUriComponent = require('encodeUriComponent');
-const log = require('logToConsole');
-
-log('neupixel-start');
 
 const NEU_AID_COOKIE = '_neuaid';
 
@@ -101,12 +98,12 @@ if (!pid) {
 }
 
 var url = "https://tracking-api.neubids.com/pxl" +
-    "?pid=" + pid + 
-    "&o=" + encodeUriComponent(order) +
-    "&v=" + encodeUriComponent(value) +
-    "&aid=" + aid + 
-    "&ord=" + ord + 
-    "&seg=" + seg + 
+    "?pid=" + encodeUriComponent(pid) +
+    "&o="   + encodeUriComponent(order) +
+    "&v="   + encodeUriComponent(value) +
+    "&aid=" + encodeUriComponent(aid) +
+    "&ord=" + encodeUriComponent(ord) +
+    "&seg=" + encodeUriComponent(seg) +
     "&cb=" + getTimestampMillis();
 
 sendPixel(url, data.gtmOnSuccess, data.gtmOnFailure);
@@ -159,28 +156,19 @@ ___WEB_PERMISSIONS___
           "key": "cookieAccess",
           "value": {
             "type": 1,
-            "string": "any"
+            "string": "specific"
           }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
+        },
         {
-          "key": "environments",
+          "key": "cookieNames",
           "value": {
-            "type": 1,
-            "string": "all"
+            "type": 2,
+            "listItem": [
+              {
+                "type": 1,
+                "string": "_neuaid"
+              }
+            ]
           }
         }
       ]
@@ -196,27 +184,50 @@ ___WEB_PERMISSIONS___
 ___TESTS___
 
 scenarios:
-- name: Untitled test 1
+- name: success-case
   code: |-
-    const log = require('logToConsole');
+    mock('sendPixel', function(url, onSuccess, onFailure) {
+      onSuccess();
+    });
+
+    mock('getCookieValues', function(name) {
+      return ['test-aid-value'];
+    });
 
     const mockData = {
       pixelId: '32-75',
       order: '123456',
       value: '987654',
-      gtmOnSuccess: function() {
-        log('gtmOnSuccess called');
-      },
-      gtmOnFailure: function() {
-        log('gtmOnFailure called');
-      }
+      gtmOnSuccess: function() {},
+      gtmOnFailure: function() {}
     };
 
     runCode(mockData);
+    assertApi('sendPixel').wasCalled();
+- name: fail-case
+  code: |-
+    mock('sendPixel', function(url, onSuccess, onFailure) {
+      onSuccess();
+    });
+
+    mock('getCookieValues', function(name) {
+      return [];
+    });
+
+    const mockData = {
+      pixelId: '',
+      order: '',
+      value: '',
+      gtmOnSuccess: function() {},
+      gtmOnFailure: function() {}
+    };
+
+    runCode(mockData);
+    assertApi('sendPixel').wasNotCalled();
 
 
 ___NOTES___
 
-Created on 4/29/2026, 4:17:05 PM
+Created on 6/23/2026, 9:56:36 PM
 
 
